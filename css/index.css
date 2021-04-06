@@ -1,0 +1,196 @@
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1E2188;
+}
+
+header {
+  background-color: #AACD06;
+  padding: 5px 0;
+}
+
+header .left_side .logo a {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+header .left_side .logo a img {
+  width: 100px;
+}
+
+header .left_side .logo a span {
+  margin-top: auto;
+}
+
+header .right_side * {
+  font-size: 30px;
+}
+
+header .right_side .links {
+  height: 100%;
+  text-align: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: bold;
+}
+
+header .right_side .links .link {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+header .right_side .links .link:last-child a {
+  font-size: 20px !important;
+}
+
+main #about_us .content .company {
+  color: #1E2188;
+  font-weight: bold;
+}
+
+main #about_us .content .company .title {
+  display: inline-block;
+  padding: 0 5px;
+  border-bottom: 4px solid #1E2188;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+main #about_us .content .text {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main #news .content .title {
+  display: inline-block;
+  padding: 0 5px;
+  border-bottom: 4px solid #1E2188;
+  margin-bottom: 10px;
+  color: #1E2188;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+
+main #news .news_bg {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/news_background.jpg");
+  background-position: center;
+  background-size: cover;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main #news .news_bg .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 100px 0;
+}
+
+main #news .news_bg .mask .container .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+main #news .news_bg .mask .container .link .news_pic {
+  width: 150px;
+  height: 150px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin-bottom: 50px;
+}
+
+main #news .news_bg .mask .container .link:last-child .news_pic {
+  margin-bottom: 0;
+}
+
+main #news .news_bg .mask .container .link:hover {
+  color: #1E2188;
+}
+
+main #products .content .title {
+  display: inline-block;
+  padding: 0 5px;
+  border-bottom: 4px solid #1E2188;
+  margin-bottom: 10px;
+  color: #1E2188;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+
+main #products .products {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main #products .products .product {
+  width: 24%;
+  text-align: center;
+  padding: 1%;
+}
+
+main #products .products .product .product_pic {
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+main #products .products .product .product_pic .h-100 {
+  background-size: cover;
+  background-position: center;
+}
+
+main #contact_us {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1E2188;
+}
+
+main #contact_us .content .title {
+  display: inline-block;
+  padding: 0 5px;
+  border-bottom: 4px solid #1E2188;
+  margin-bottom: 10px;
+  color: #1E2188;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+
+main #contact_us .text_area {
+  height: 200px;
+}
+/*# sourceMappingURL=index.css.map */
