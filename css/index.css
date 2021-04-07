@@ -4,11 +4,11 @@ ul {
 
 a {
   text-decoration: none;
-  color: #1E2188;
+  color: #1e2188;
 }
 
 header {
-  background-color: #AACD06;
+  background-color: #aacd06;
   padding: 5px 0;
 }
 
@@ -23,44 +23,71 @@ header .left_side .logo a {
 }
 
 header .left_side .logo a img {
-  width: 100px;
+  width: 50px;
 }
 
 header .left_side .logo a span {
+  margin-left: 5px;
   margin-top: auto;
 }
 
 header .right_side * {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 header .right_side .links {
   height: 100%;
-  text-align: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: bold;
 }
 
 header .right_side .links .link {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 header .right_side .links .link:last-child a {
   font-size: 20px !important;
 }
 
+header .right_side .links .link a:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 10px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+header .right_side .links .link a:hover:after {
+  width: 84.8px;
+}
+
+header .right_side .links .link:nth-child(5) a:hover:after {
+  width: 50px;
+}
+
+main #about_us {
+  padding: 65px 0;
+}
+
 main #about_us .content .company {
-  color: #1E2188;
+  color: #1e2188;
   font-weight: bold;
 }
 
 main #about_us .content .company .title {
   display: inline-block;
   padding: 0 5px;
-  border-bottom: 4px solid #1E2188;
+  border-bottom: 4px solid #1e2188;
   margin-bottom: 10px;
   font-size: 30px;
 }
@@ -83,35 +110,43 @@ main #about_us .content .text {
   font-weight: bold;
 }
 
-main #news .content .title {
+main #news {
+  padding: 65px 0;
+  position: relative;
+  background-image: url("../img/news_background.jpg");
+  background-size: cover;
+  background-position: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main #news:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+}
+
+main #news .container .content {
+  position: relative;
+  z-index: 1;
+}
+
+main #news .container .content .title {
   display: inline-block;
   padding: 0 5px;
-  border-bottom: 4px solid #1E2188;
-  margin-bottom: 10px;
-  color: #1E2188;
+  border-bottom: 4px solid white;
+  margin-bottom: 30px;
+  color: white;
   font-weight: bold;
   text-align: center;
   font-size: 30px;
 }
 
-main #news .news_bg {
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/news_background.jpg");
-  background-position: center;
-  background-size: cover;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-main #news .news_bg .mask {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 100px 0;
-}
-
-main #news .news_bg .mask .container .link {
+main #news .container .link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,29 +157,35 @@ main #news .news_bg .mask .container .link {
   font-weight: bold;
 }
 
-main #news .news_bg .mask .container .link .news_pic {
-  width: 150px;
-  height: 150px;
+main #news .container .link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+main #news .container .link .news_pic {
+  width: 120px;
+  height: 120px;
   background-color: #ffffff;
   border-radius: 50%;
   border: 1px solid #000;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  margin-right: 30px;
 }
 
-main #news .news_bg .mask .container .link:last-child .news_pic {
+main #news .container .link:last-child .news_pic {
   margin-bottom: 0;
 }
 
-main #news .news_bg .mask .container .link:hover {
-  color: #1E2188;
+main #products {
+  padding: 65px 0;
 }
 
 main #products .content .title {
   display: inline-block;
   padding: 0 5px;
-  border-bottom: 4px solid #1E2188;
+  border-bottom: 4px solid #1e2188;
   margin-bottom: 10px;
-  color: #1E2188;
+  color: #1e2188;
   font-weight: bold;
   text-align: center;
   font-size: 30px;
@@ -174,17 +215,18 @@ main #products .products .product .product_pic .h-100 {
 }
 
 main #contact_us {
+  padding: 65px 0;
   font-size: 20px;
   font-weight: bold;
-  color: #1E2188;
+  color: #1e2188;
 }
 
 main #contact_us .content .title {
   display: inline-block;
   padding: 0 5px;
-  border-bottom: 4px solid #1E2188;
+  border-bottom: 4px solid #1e2188;
   margin-bottom: 10px;
-  color: #1E2188;
+  color: #1e2188;
   font-weight: bold;
   text-align: center;
   font-size: 30px;
