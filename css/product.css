@@ -121,6 +121,10 @@ header .right_side .mobile_menu .dropdown-menu .dropdown-item {
   font-weight: bold;
 }
 
+main {
+  min-height: calc(100vh - 60px);
+}
+
 main nav ol li {
   color: #000 !important;
   font-weight: bold;
