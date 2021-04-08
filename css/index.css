@@ -382,13 +382,65 @@ main #contact_us .content .title {
   }
 }
 
-@media (max-width: 767px) {
-  main #contact_us form {
-    margin-bottom: 15px;
-  }
+main #contact_us form {
+  position: relative;
+  margin-bottom: 15px;
 }
 
 main #contact_us form .text_area {
   height: 200px;
+}
+
+main #contact_us form .form_button {
+  background-color: #1e2188;
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+main #contact_us form .form_button:hover {
+  background-color: #aacd06;
+}
+
+footer {
+  background-color: #aacd06;
+  padding: 5px 0;
+  text-align: center;
+}
+
+footer .footer_info {
+  letter-spacing: .1rem;
+  font-weight: bold;
+  font-size: 12px;
+  color: #1e2188;
+}
+
+.backToTop {
+  font-size: 30px;
+  padding: 20px 27px;
+  background-color: #aacd06;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  position: fixed;
+  z-index: 10;
+  right: 30px;
+  bottom: 30px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.backToTop:hover {
+  background-color: #1e2188;
+  color: white;
+}
+
+@media (max-width: 575px) {
+  .backToTop {
+    padding: 10px 17px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
