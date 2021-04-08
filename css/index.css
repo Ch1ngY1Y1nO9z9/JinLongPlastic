@@ -22,6 +22,18 @@ header .left_side .logo a {
   font-size: 30px;
 }
 
+@media (max-width: 767px) {
+  header .left_side .logo a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  header .left_side .logo a {
+    font-size: 20px;
+  }
+}
+
 header .left_side .logo a img {
   width: 50px;
 }
@@ -33,6 +45,12 @@ header .left_side .logo a span {
 
 header .right_side * {
   font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  header .right_side * {
+    font-size: 16px;
+  }
 }
 
 header .right_side .links {
@@ -49,10 +67,6 @@ header .right_side .links .link {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-header .right_side .links .link:last-child a {
-  font-size: 20px !important;
 }
 
 header .right_side .links .link a:after {
@@ -75,8 +89,46 @@ header .right_side .links .link:nth-child(5) a:hover:after {
   width: 50px;
 }
 
+@media (max-width: 992px) {
+  header .right_side .links .link {
+    padding: 0 5px;
+  }
+}
+
+header .right_side .mobile_menu .navbar-toggler-icon {
+  background-image: url("../img/menu.png");
+}
+
+header .right_side .mobile_menu .show .navbar-toggler-icon {
+  background-image: url("../img/menu-open.png");
+}
+
+header .right_side .mobile_menu .dropdown-toggle::after {
+  content: unset;
+}
+
+header .right_side .mobile_menu .dropdown-item.active, header .right_side .mobile_menu .dropdown-item:active {
+  background-color: #f8f9fa;
+}
+
+header .right_side .mobile_menu .dropdown-menu {
+  text-align: center;
+}
+
+header .right_side .mobile_menu .dropdown-menu .dropdown-item {
+  font-size: 20px;
+  color: #1e2188;
+  font-weight: bold;
+}
+
 main #about_us {
   padding: 65px 0;
+}
+
+@media (max-width: 767px) {
+  main #about_us {
+    padding: 35px 0;
+  }
 }
 
 main #about_us .content .company {
@@ -90,6 +142,18 @@ main #about_us .content .company .title {
   border-bottom: 4px solid #1e2188;
   margin-bottom: 10px;
   font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  main #about_us .content .company .title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  main #about_us .content .company .title {
+    font-size: 20px;
+  }
 }
 
 main #about_us .content .text {
@@ -110,6 +174,13 @@ main #about_us .content .text {
   font-weight: bold;
 }
 
+@media (max-width: 767px) {
+  main #about_us .content .text {
+    font-size: 16px;
+    padding-top: 15px;
+  }
+}
+
 main #news {
   padding: 65px 0;
   position: relative;
@@ -118,6 +189,13 @@ main #news {
   background-position: center;
   font-size: 20px;
   font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  main #news {
+    font-size: 16px;
+    padding: 35px 0;
+  }
 }
 
 main #news:before {
@@ -144,6 +222,18 @@ main #news .container .content .title {
   font-weight: bold;
   text-align: center;
   font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  main #news .container .content .title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  main #news .container .content .title {
+    font-size: 20px;
+  }
 }
 
 main #news .container .link {
@@ -180,6 +270,12 @@ main #products {
   padding: 65px 0;
 }
 
+@media (max-width: 767px) {
+  main #products {
+    padding: 35px 0;
+  }
+}
+
 main #products .content .title {
   display: inline-block;
   padding: 0 5px;
@@ -191,15 +287,45 @@ main #products .content .title {
   font-size: 30px;
 }
 
+@media (max-width: 767px) {
+  main #products .content .title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  main #products .content .title {
+    font-size: 20px;
+  }
+}
+
 main #products .products {
   font-size: 30px;
   font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  main #products .products {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  main #products .products {
+    font-size: 20px;
+  }
 }
 
 main #products .products .product {
   width: 24%;
   text-align: center;
   padding: 1%;
+}
+
+@media (max-width: 575px) {
+  main #products .products .product {
+    width: 50%;
+  }
 }
 
 main #products .products .product .product_pic {
@@ -221,6 +347,12 @@ main #contact_us {
   color: #1e2188;
 }
 
+@media (max-width: 767px) {
+  main #contact_us {
+    padding: 35px 0;
+  }
+}
+
 main #contact_us .content .title {
   display: inline-block;
   padding: 0 5px;
@@ -232,7 +364,31 @@ main #contact_us .content .title {
   font-size: 30px;
 }
 
-main #contact_us .text_area {
+@media (max-width: 767px) {
+  main #contact_us .content .title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  main #contact_us .content .title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  main #contact_us {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  main #contact_us form {
+    margin-bottom: 15px;
+  }
+}
+
+main #contact_us form .text_area {
   height: 200px;
 }
 /*# sourceMappingURL=index.css.map */

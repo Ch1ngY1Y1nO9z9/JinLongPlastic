@@ -14,52 +14,107 @@ a {
 header {
     background-color: $nav_bg;
     padding: 5px 0;
-
+  
     .left_side {
-        .logo {
+      .logo {
+        a {
+          height: 100%;
+  
+          display: flex;
+  
+          color: $white;
+          font-weight: bold;
+          font-size: 30px;
 
-            a {
-                height: 100%;
+          @media(max-width: 767px) {
+              font-size: 24px;
+          }
 
-                display: flex;
-
-                color: $white;
-                font-weight: bold;
-                font-size: 30px;
-
-                img {
-                    width: 100px;
-                }
-                span { 
-                    margin-top: auto;
-                }
-            }
-
+          @media(max-width: 575px) {
+                font-size: 20px;
         }
+  
+          img {
+            width: 50px;
+          }
+          span {
+            margin-left: 5px;
+            margin-top: auto;
+          }
+        }
+      }
     }
-
+  
     .right_side {
-        *{
-            font-size: 30px;
-        }
-        .links {
-            height: 100%;
-            text-align: center;
-            justify-content: flex-end;
-            font-weight: bold;
+      * {
+        font-size: 20px;
 
-            .link {
-                align-self: flex-end;
-                &:last-child {
-                    a {
-                        font-size: 20px !important;
-                    }
+        @media(max-width: 767px) {
+            font-size: 16px;
+        }
+      }
+      .links {
+        height: 100%;
+        text-align: left;
+        justify-content: center;
+        font-weight: bold;
+  
+        .link {
+          position: relative;
+          align-self: center;
+  
+          & a:after {
+            content: "";
+            position: absolute;
+            background-color: white;
+            height: 2px;
+            width: 0;
+            bottom: 0;
+            left: 10px;
+            transition: 0.6s;
+          }
+          & a:hover:after {
+            width: 84.8px;
+          }
+          &:nth-child(5) a:hover:after {
+            width: 50px;
+          }
+
+          @media(max-width: 992px){
+              padding: 0 5px;
+          }
+        }
+      }
+
+      .mobile_menu {
+            .navbar-toggler-icon {
+                background-image: url('../img/menu.png');
+            }
+
+            .show .navbar-toggler-icon {
+                background-image: url('../img/menu-open.png');
+            }
+            
+            .dropdown-toggle::after {
+                content:unset;
+            }
+            .dropdown-item.active, .dropdown-item:active {
+                background-color: #f8f9fa;
+            }
+
+            .dropdown-menu {
+                text-align: center;
+
+                .dropdown-item {
+                    font-size: 20px;
+                    color: $title;
+                    font-weight: bold;
                 }
             }
 
-        }
+      }
     }
-}
+  }
 
 main {
     nav {
@@ -67,7 +122,7 @@ main {
             li {
                 color: #000 !important;
                 font-weight: bold;
-                font-size: 30px;
+                font-size: 20px;
             }
         }
     }
@@ -75,6 +130,10 @@ main {
         color: $title;
         font-size: 20px;
         font-weight: bold;
+
+        @media(max-width: 767px) {
+            font-size: 16px;
+        }
         
         .product {
             margin-bottom: 30px;
@@ -88,17 +147,25 @@ main {
     
                 .product_name {
                     font-size: 30px;
+
+                    @media(max-width: 767px) {
+                        font-size: 20px;
+                    }
                 }
             }
             
             .product_detail {
                 padding-left: 60px;
+                padding-bottom: 45px;
+
+                @media(max-width: 786px) {
+                    padding-left: 10px;
+                    padding-bottom: 25px;
+                }
 
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-
-                padding-bottom: 45px;
 
                 p {
                     margin: 0;
